@@ -26,7 +26,7 @@ class Creator extends React.Component {
   }
 
   handleOK = () => {
-    if(this.state.value != ''){
+    if (this.state.value != '') {
       this.props.action(this.state.value);
       this.setState({
         value: '',
@@ -36,9 +36,10 @@ class Creator extends React.Component {
   }
 
   handleCancel = () => {
+    window.confirm('Are You sure?');
     this.setState({
       value: '',
-      visibleButtons: false
+      visibleButtons: false,
     });
   }
 
