@@ -1,3 +1,4 @@
+/* eslint react/prop-types: 0 */
 import React from 'react';
 import styles from './Creator.scss';
 import Button from '../Button/Button';
@@ -6,7 +7,6 @@ import PropTypes from 'prop-types';
 class Creator extends React.Component {
   static propTypes = {
     text: PropTypes.string,
-    action: PropTypes.node,
   }
 
   static defaultProps = {
