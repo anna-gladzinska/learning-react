@@ -22,8 +22,8 @@ class App extends React.Component {
           ...state.list,
           {
             title,
-          }
-        ]
+          },
+        ],
       }
     ));
   }
@@ -36,13 +36,13 @@ class App extends React.Component {
         <List {...listData} />
 
         {this.state.list.map(({ title }) => (
-          <List title={title} description={listData.description} image={listData.image} />
+          <List title={title} description={listData.description} image={listData.image} key={listData.key} />
         ))
         }
 
         <Creator text={settings.listCreatorText} action={title => this.addList(title)} />
       </main>
-    )
+    );
   }
 }
 
