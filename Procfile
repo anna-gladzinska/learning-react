@@ -1,1 +1,1 @@
-web: $(npm bin)/http-server dist
+web: http-server dist
