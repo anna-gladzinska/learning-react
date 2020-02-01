@@ -82,7 +82,19 @@ const lists = [
     id: 'list-1',
     title: 'Things to do <sup>soon!</sup>',
     description: 'Interesting things I want to check out!',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+    image: 'https://i.postimg.cc/9fgHJqkD/space-1.png',
+  },
+  {
+    id: 'list-2',
+    title: 'Cats logic!',
+    description: 'Why boxes are better than anything else!',
+    image: 'https://i.postimg.cc/FsyG9XNp/cat-box.png',
+  },
+  {
+    id: 'list-3',
+    title: 'Bugs everywhere!',
+    description: 'How I can get rid of all that NaNs!',
+    image: 'https://i.postimg.cc/vHF3FZFD/bugs.png',
   },
 ];
 

@@ -4,6 +4,8 @@ import Info from '../Info/Info';
 import Faq from '../Faq/Faq';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import MainLayout from '../MainLayout/MainLayout';
+import List from '../List/ListContainer';
+import SearchResults from '../SearchResults/SearchResultsContainer';
 
 const App = () => (
   <BrowserRouter>
@@ -12,6 +14,8 @@ const App = () => (
         <Route exact path='/' component={Home} />
         <Route exact path='/info' component={Info} />
         <Route exact path='/faq' component={Faq} />
+        <Route exact path="/list/:id" component={List} />
+        <Route exact path="/search/:id" component={SearchResults} />
       </Switch>
     </MainLayout>
   </BrowserRouter>
